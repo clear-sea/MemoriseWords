@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>记单词小程序</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/images/images/logo.png</normaloff>:/images/images/logo.png</iconset>
   </property>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
@@ -19,10 +23,10 @@
      <x>0</x>
      <y>0</y>
      <width>301</width>
-     <height>201</height>
+     <height>203</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout" stretch="3,3,3,3,3,3">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="3,0,3,3,3,3">
     <property name="spacing">
      <number>3</number>
     </property>
@@ -36,7 +40,7 @@
      <number>30</number>
     </property>
     <property name="bottomMargin">
-     <number>10</number>
+     <number>20</number>
     </property>
     <item>
      <widget class="QLabel" name="label">
@@ -56,14 +60,22 @@
     <item>
      <widget class="QPushButton" name="pushButton_5">
       <property name="text">
-       <string>记单词</string>
+       <string>过单词</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resource.qrc">
+        <normaloff>:/images/images/memorize.png</normaloff>:/images/images/memorize.png</iconset>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_4">
       <property name="text">
-       <string>添加单词</string>
+       <string>浏览单词</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resource.qrc">
+        <normaloff>:/images/images/browse.png</normaloff>:/images/images/browse.png</iconset>
       </property>
      </widget>
     </item>
@@ -72,6 +84,10 @@
       <property name="text">
        <string>生词本</string>
       </property>
+      <property name="icon">
+       <iconset resource="resource.qrc">
+        <normaloff>:/images/images/dict.png</normaloff>:/images/images/dict.png</iconset>
+      </property>
      </widget>
     </item>
     <item>
@@ -79,10 +95,14 @@
       <property name="text">
        <string>测验</string>
       </property>
+      <property name="icon">
+       <iconset resource="resource.qrc">
+        <normaloff>:/images/images/test.png</normaloff>:/images/images/test.png</iconset>
+      </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="pushButton_1">
       <property name="text">
        <string>关于</string>
       </property>
@@ -91,6 +111,8 @@
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

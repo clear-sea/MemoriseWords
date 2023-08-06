@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'f:\LiuQingshuo\memorizeWords\UI\show.ui'
+# Form implementation generated from reading ui file 'f:\LiuQingshuo\memorizeWords\UI\passWords.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -15,37 +15,34 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(300, 200)
-        Form.setWindowTitle("")
         self.verticalLayoutWidget = QtWidgets.QWidget(Form)
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(0, 0, 301, 201))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
-        self.verticalLayout.setContentsMargins(15, 10, 15, 0)
+        self.verticalLayout.setContentsMargins(0, 20, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.tableView = QtWidgets.QTableView(self.verticalLayoutWidget)
+        self.label = QtWidgets.QLabel(self.verticalLayoutWidget)
         font = QtGui.QFont()
-        font.setPointSize(10)
-        self.tableView.setFont(font)
-        self.tableView.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.tableView.setObjectName("tableView")
-        self.verticalLayout.addWidget(self.tableView)
+        font.setPointSize(15)
+        self.label.setFont(font)
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.verticalLayout.addWidget(self.label)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
-        self.horizontalLayout.setContentsMargins(5, 5, 5, 5)
+        self.horizontalLayout.setContentsMargins(30, -1, 30, -1)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.pushButton_2 = QtWidgets.QPushButton(self.verticalLayoutWidget)
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/images/images/delete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_2.setIcon(icon)
         self.pushButton_2.setObjectName("pushButton_2")
         self.horizontalLayout.addWidget(self.pushButton_2)
         self.pushButton = QtWidgets.QPushButton(self.verticalLayoutWidget)
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/images/images/add.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton.setIcon(icon1)
         self.pushButton.setObjectName("pushButton")
         self.horizontalLayout.addWidget(self.pushButton)
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.commandLinkButton = QtWidgets.QCommandLinkButton(self.verticalLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(12)
+        self.commandLinkButton.setFont(font)
         self.commandLinkButton.setObjectName("commandLinkButton")
         self.verticalLayout.addWidget(self.commandLinkButton)
 
@@ -54,7 +51,8 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        self.pushButton_2.setText(_translate("Form", "删除选中项"))
-        self.pushButton.setText(_translate("Form", "添加"))
-        self.commandLinkButton.setText(_translate("Form", "返回主界面"))
-from . import resource_rc
+        Form.setWindowTitle(_translate("Form", "过单词"))
+        self.label.setText(_translate("Form", "TextLabel"))
+        self.pushButton_2.setText(_translate("Form", "记住了，下一个"))
+        self.pushButton.setText(_translate("Form", "记到生词本，下一个"))
+        self.commandLinkButton.setText(_translate("Form", "返回主页面"))
