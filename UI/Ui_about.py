@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'f:\LiuQingshuo\memorizeWords\about.ui'
+# Form implementation generated from reading ui file 'f:\LiuQingshuo\memorizeWords\UI\about.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -16,10 +16,10 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(300, 200)
         self.verticalLayoutWidget = QtWidgets.QWidget(Form)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(0, 0, 300, 200))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(0, 30, 301, 171))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
-        self.verticalLayout.setContentsMargins(10, 0, 10, 0)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
         self.label_3 = QtWidgets.QLabel(self.verticalLayoutWidget)
         font = QtGui.QFont()
@@ -40,12 +40,14 @@ class Ui_Form(object):
         self.label.setObjectName("label")
         self.verticalLayout.addWidget(self.label)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setContentsMargins(10, -1, 10, -1)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.label_4 = QtWidgets.QLabel(self.verticalLayoutWidget)
         font = QtGui.QFont()
         font.setPointSize(12)
         self.label_4.setFont(font)
         self.label_4.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_4.setOpenExternalLinks(True)
         self.label_4.setObjectName("label_4")
         self.horizontalLayout.addWidget(self.label_4)
         self.label_2 = QtWidgets.QLabel(self.verticalLayoutWidget)
@@ -53,12 +55,18 @@ class Ui_Form(object):
         font.setPointSize(12)
         self.label_2.setFont(font)
         self.label_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_2.setOpenExternalLinks(True)
         self.label_2.setObjectName("label_2")
         self.horizontalLayout.addWidget(self.label_2)
         self.verticalLayout.addLayout(self.horizontalLayout)
-        self.commandLinkButton = QtWidgets.QCommandLinkButton(self.verticalLayoutWidget)
-        self.commandLinkButton.setObjectName("commandLinkButton")
-        self.verticalLayout.addWidget(self.commandLinkButton)
+        self.backbutton = QtWidgets.QPushButton(Form)
+        self.backbutton.setGeometry(QtCore.QRect(0, 0, 30, 30))
+        self.backbutton.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/images/images/back.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.backbutton.setIcon(icon)
+        self.backbutton.setFlat(True)
+        self.backbutton.setObjectName("backbutton")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -71,4 +79,5 @@ class Ui_Form(object):
 "开发者：清澈的海水"))
         self.label_4.setText(_translate("Form", "<a href=\"https://github.com/clear-sea/MemoriseWords\">此项目的GitHub地址</a>"))
         self.label_2.setText(_translate("Form", "<a href=\"https://www.github.com/clear-sea/\">作者的GitHub</a>"))
-        self.commandLinkButton.setText(_translate("Form", "返回主界面"))
+        self.backbutton.setToolTip(_translate("Form", "返回主界面"))
+import resource_rc

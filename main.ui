@@ -26,7 +26,7 @@
      <height>203</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout" stretch="3,0,3,3,3,3">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="3,3,3,3,3">
     <property name="spacing">
      <number>3</number>
     </property>
@@ -40,7 +40,7 @@
      <number>30</number>
     </property>
     <property name="bottomMargin">
-     <number>20</number>
+     <number>30</number>
     </property>
     <item>
      <widget class="QLabel" name="label">
@@ -58,17 +58,6 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_5">
-      <property name="text">
-       <string>过单词</string>
-      </property>
-      <property name="icon">
-       <iconset resource="resource.qrc">
-        <normaloff>:/images/images/memorize.png</normaloff>:/images/images/memorize.png</iconset>
-      </property>
-     </widget>
-    </item>
-    <item>
      <widget class="QPushButton" name="pushButton_4">
       <property name="text">
        <string>浏览单词</string>
@@ -82,7 +71,7 @@
     <item>
      <widget class="QPushButton" name="pushButton_3">
       <property name="text">
-       <string>生词本</string>
+       <string> 生词本 </string>
       </property>
       <property name="icon">
        <iconset resource="resource.qrc">
@@ -93,7 +82,7 @@
     <item>
      <widget class="QPushButton" name="pushButton_2">
       <property name="text">
-       <string>测验</string>
+       <string>  测验  </string>
       </property>
       <property name="icon">
        <iconset resource="resource.qrc">
@@ -104,7 +93,11 @@
     <item>
      <widget class="QPushButton" name="pushButton_1">
       <property name="text">
-       <string>关于</string>
+       <string>  关于  </string>
+      </property>
+      <property name="icon">
+       <iconset resource="resource.qrc">
+        <normaloff>:/images/images/about.png</normaloff>:/images/images/about.png</iconset>
       </property>
      </widget>
     </item>

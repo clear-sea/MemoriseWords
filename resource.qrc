@@ -1,11 +1,12 @@
 <RCC>
   <qresource prefix="images">
+    <file>images/back.png</file>
     <file>images/delete.png</file>
     <file>images/add.png</file>
     <file>images/browse.png</file>
     <file>images/dict.png</file>
     <file>images/logo.png</file>
-    <file>images/memorize.png</file>
     <file>images/test.png</file>
+    <file>images/about.png</file>
   </qresource>
 </RCC>

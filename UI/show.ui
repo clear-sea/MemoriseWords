@@ -13,86 +13,92 @@
   <property name="windowTitle">
    <string/>
   </property>
-  <widget class="QWidget" name="verticalLayoutWidget">
+  <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>301</width>
-     <height>201</height>
+     <x>15</x>
+     <y>30</y>
+     <width>271</width>
+     <height>131</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>160</y>
+     <width>271</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
     <property name="leftMargin">
-     <number>15</number>
+     <number>5</number>
     </property>
     <property name="topMargin">
-     <number>10</number>
+     <number>5</number>
     </property>
     <property name="rightMargin">
-     <number>15</number>
+     <number>5</number>
     </property>
     <property name="bottomMargin">
-     <number>0</number>
+     <number>5</number>
     </property>
     <item>
-     <widget class="QTableView" name="tableView">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-       </font>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>删除选中项</string>
       </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
+      <property name="icon">
+       <iconset resource="../resource.qrc">
+        <normaloff>:/images/images/delete.png</normaloff>:/images/images/delete.png</iconset>
       </property>
      </widget>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <property name="leftMargin">
-       <number>5</number>
-      </property>
-      <property name="topMargin">
-       <number>5</number>
-      </property>
-      <property name="rightMargin">
-       <number>5</number>
-      </property>
-      <property name="bottomMargin">
-       <number>5</number>
-      </property>
-      <item>
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="text">
-         <string>删除选中项</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../resource.qrc">
-          <normaloff>:/images/images/delete.png</normaloff>:/images/images/delete.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string>添加</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../resource.qrc">
-          <normaloff>:/images/images/add.png</normaloff>:/images/images/add.png</iconset>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <widget class="QCommandLinkButton" name="commandLinkButton">
+     <widget class="QPushButton" name="pushButton">
       <property name="text">
-       <string>返回主界面</string>
+       <string>添加</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../resource.qrc">
+        <normaloff>:/images/images/add.png</normaloff>:/images/images/add.png</iconset>
       </property>
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QPushButton" name="backbutton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>返回主界面</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/images/images/back.png</normaloff>:/images/images/back.png</iconset>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
   </widget>
  </widget>
  <resources>
