@@ -1,7 +1,6 @@
 # 导入相关PyQt5模块
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import *
-from PyQt5.QtGui import QIcon,QStandardItemModel,QStandardItem
 # 导入必要内置库
 import sys
 import os
@@ -70,7 +69,6 @@ if __name__=="__main__":
 
     '''创建窗口'''
     window=QWidget()
-    window.setWindowIcon(QIcon('images/logo.png'))
     '''初始化并显示主页面'''
     ui=Ui_main.Ui_Form()
     ui.setupUi(window)

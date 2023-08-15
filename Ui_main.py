@@ -68,7 +68,7 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "记单词小程序"))
-        self.label.setText(_translate("Form", "词汇表单词数量:"))
+        self.label.setText(_translate("Form", "单词表单词数量:"))
         self.pushButton_4.setText(_translate("Form", "浏览单词"))
         self.pushButton_3.setText(_translate("Form", " 生词本 "))
         self.pushButton_2.setText(_translate("Form", "  测验  "))
